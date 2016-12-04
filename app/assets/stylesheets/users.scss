@@ -71,19 +71,20 @@ a:focus {
 #card .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('/assets/chef_card.jpg') center / cover;
+    background: url('<%= asset_path("chef_card.jpg") %> ') center / cover;
 }
 
 #card_error .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('/assets/oh-no.jpg') center / cover;
+    
+    background: url('<%= asset_path("oh-no.jpg") %> ') center / cover;
 }
 
 #card_success .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('/assets/oh-yes.jpg') center / cover;
+    background: url('<%= asset_path("oh-yes.jpg") %> ') center / cover;
 }
 
 .card_status {
