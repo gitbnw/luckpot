@@ -77,13 +77,13 @@ a:focus {
 #card_error .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('<%= asset_path("oh-no.jpg") %> ') center / cover;
+    background: url(asset-path('oh-no.jpg')) center / cover;
 }
 
 #card_success .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('<%= asset_path("oh-yes.jpg") %> ') center / cover;
+    background: url(asset-path('oh-yes.jpg')) center / cover;
 }
 
 .card_status {

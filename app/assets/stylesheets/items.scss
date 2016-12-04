@@ -37,5 +37,5 @@
 #item .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('<%= asset_path("item-add.jpg") %> ') center / cover;
+    background: url(asset-path('item-add.jpg')) center / cover;
 }
