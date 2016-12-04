@@ -71,7 +71,7 @@ a:focus {
 #card .mdl-card__title {
     color: white;
     height: 176px;
-    background: url('<%= asset_path("chef_card.jpg") %> ') center / cover;
+    background-image: image-url("chef_card.jpg") center / cover;
 }
 
 #card_error .mdl-card__title {
