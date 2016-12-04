@@ -56,3 +56,7 @@ gem 'material_design_lite-rails', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'httparty'
+
+gem 'rails_12factor', group: :production
+
+ruby "2.3.1"
