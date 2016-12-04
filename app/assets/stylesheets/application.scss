@@ -15,6 +15,6 @@
 @import "material";
 // @import "bootstrap-sprockets";
 // @import "bootstrap";
-@import "users.scss";
+@import "users.scss.erb";
 @import "items.scss";
 @import "jquery-ui";
