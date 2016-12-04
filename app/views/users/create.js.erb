@@ -4,14 +4,16 @@
  $card = $( '#card' ),
  $card_error = $( '#card_error' ),
  $card_success = $( '#card_success' ),
+ $card_success_butt = $('#card_success_butt'),
  $card_success_para = $( '#card_success_para' );
  
+<!--{:id => @user.id, :api_key=> @user.api_key, :email => @user.email}-->
+
  $card.parent().toggle('slide', {direction: 'left'}, 500);
 
-<% if @api_response.code == 201 && @user.valid? %>
-   $card_success_para.html("<%= escape_javascript(render partial: 'users/user', locals: { user: @user }) %>");
-   $card_success.parent().toggle(effect, { direction: "right"}, duration);
-
+<% if @user.valid? %>
+    $card_success_butt.append("<%= escape_javascript(link_to('The Goods', {controller: "items", action: "index", :user_id => @user.id }, class: "mdl-button mdl-js-button mdl-button--primary")) %>")
+    $card_success.parent().toggle(effect, { direction: "right"}, duration);
  <% else %>
    $card_error.parent().toggle(effect, { direction: "right"}, duration);   
    

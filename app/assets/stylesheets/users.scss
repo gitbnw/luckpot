@@ -1,32 +1,33 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-a:hover, a:focus {
-text-decoration: none;
+a:hover,
+a:focus {
+    text-decoration: none;
     text-decoration-color: -moz-use-text-color;
     text-decoration-line: none;
     text-decoration-style: solid;
 }
 
 .padding {
-    width:50%;
+    width: 50%;
     display: table-cell;
     vertical-align: middle;
-    margin: 0;    
+    margin: 0;
 }
 
 .container {
- display: table-cell;
-text-align: center;
-vertical-align: middle;
-margin: 0;
-padding: 0 40px 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 40px 40px;
 }
+
 #list {
     position: relative;
 }
+
 #list ul {
     width: 80%;
     margin: 0 auto;
@@ -34,61 +35,66 @@ padding: 0 40px 40px;
     // padding: 4%;
 }
 
-.question{
+.question {
     color: rgb(63, 81, 181);
 }
 
-.answer{
+.answer {
     color: rgb(255, 64, 129);
 }
+
 #card_col {
     margin-left: 13%;
-
     // position: relative;
 }
+
 .container_padding_outer {
-  padding: 12px;  
-  height: 345px;
-  width: 345px;
-  margin-left: -50px;
-  position: absolute;
-};
+    padding: 12px;
+    height: 345px;
+    width: 345px;
+    margin-left: -50px;
+    position: absolute;
+}
 
+;
 .container_padding {
-  padding: 12px;  
-};
+    padding: 12px;
+}
 
+;
 .card-user {
-    
     position: absolute;
     height: 333px;
     width: 333px;
 }
 
-
-#card .mdl-card__title
-{
-  color: white;
-  height: 176px;
-  background: url('/assets/chef_card.jpg') center / cover;
+#card .mdl-card__title {
+    color: white;
+    height: 176px;
+    background: url('/assets/chef_card.jpg') center / cover;
 }
+
 #card_error .mdl-card__title {
-  color: white;
-  height: 176px;
-  background: url('/assets/oh-no.jpg') center / cover;    
+    color: white;
+    height: 176px;
+    background: url('/assets/oh-no.jpg') center / cover;
 }
 
 #card_success .mdl-card__title {
-  color: white;
-  height: 176px;
-  background: url('/assets/oh-yes.jpg') center / cover;    
+    color: white;
+    height: 176px;
+    background: url('/assets/oh-yes.jpg') center / cover;
 }
 
 .card_status {
-    display:none;
+    display: none;
 }
 
-.card-user button {
-    display:block;
+.mdl-js-button {
+    display: block;
     margin: 0 auto;
+}
+
+#card_success a {
+    width: 50%;
 }

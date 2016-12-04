@@ -1,0 +1,41 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#item_list {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    overflow: hidden;
+}
+
+#item_list .section-inner {
+    overflow: auto;
+    padding-right: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#item_list ul {
+    margin: 0 auto;
+    max-width: 85%;
+    max-height: 360px;
+    list-style: none;
+    // margin-left: 18%;
+    // padding: 4%;
+}
+
+#item_list li {
+    display: inline-block;
+}
+
+#item_list span {
+    display: inline;
+}
+
+#item .mdl-card__title {
+    color: white;
+    height: 176px;
+    background: url('/assets/item-add.jpg') center / cover;
+}

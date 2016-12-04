@@ -8,7 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+   <div class="mdl-layout__header-row">
+      <%= link_to "Join the UL Potluck", root_path, :class => "mdl-layout-title" %>
+      <div class="mdl-layout-spacer"></div>
+   </div>
+</header>
 <%= yield %>
 
 </body>

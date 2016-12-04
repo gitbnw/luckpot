@@ -1,7 +1,8 @@
 class User < ApplicationRecord
+    has_many :items
     
-#     def self.api_new params
-#         @results = UL::PotluckAPI.new(params)
-#         @results.inspect
-#     end
+    validates :email, presence: true
+    validates :api_key, presence: true
+    validates :id, presence: true
+
 end

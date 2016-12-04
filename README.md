@@ -2,6 +2,8 @@
 
 ##launch codes
 sudo service postgresql start  
-cloud9: rails s -b $IP -p $PORT
+
+cloud9:  
+rails s -b $IP -p $PORT
 
 

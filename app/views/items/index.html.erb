@@ -1,0 +1,61 @@
+<div id="item_list" class="section">
+   <div class="section-inner">
+      <ul class="demo-list-item mdl-list">
+         <% @items.each do |item| %> 
+         <% if item.valid? %>
+         <li class="mdl-list__item" data-user-id=<%=item[:user_id] %>>
+            <span class="mdl-list__item-primary-content">
+            <%= item[:name] %>
+            <% if item[:user_id] == @user.id %>
+            <i class="material-icons mdl-list__item-icon">sentiment_very_satisfied</i>
+            <% else %>
+            <i class="material-icons mdl-list__item-icon">done</i>
+            <% end %>
+            </span>
+         </li>
+         <% end %>
+         <% end %>
+      </ul>
+   </div>
+</div>
+<div class="centeritems mdl-grid">
+   <div class="mdl-layout-spacer"></div>
+   <div class="mdl-cell mdl-cell--4-col" id="card_col">
+      <div class="container_padding_outer">
+         <div class="mdl-card mdl-shadow--2dp card-item" id="item">
+            <div class="container_padding">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">What will you bring</h2>
+               </div>
+               <%= form_for(new_user_item_path, :user_id => @user.id, :remote => true) do %>
+               <div class="mdl-textfield mdl-js-textfield">
+                  <%= text_field("item", "name", class: "mdl-textfield__input", id: "treat") %>
+                  <label class="mdl-textfield__label" for="treat">add a tasty treat</label>
+               </div>
+               <div class="mdl-card__actions mdl-card--border">
+                  <button type="submit" class="mdl-button mdl-js-button mdl-button--accent" id="button">
+                  Add this item!
+                  </button>
+               </div>
+               <% end %>
+            </div>
+         </div>
+      </div>
+      <div class="container_padding_outer card_status">
+         <div class="mdl-card mdl-shadow--2dp card-user" id="card_error">
+            <div class="container_padding">
+               <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">oh dear</h2>
+               </div>
+               <div id="card_error_mess" class="mdl-card__supporting-text">Uh oh.  There was a problem registering your email with the UL potluck.</div>
+               <div class="mdl-card__actions mdl-card--border">
+                  <button type="submit" class="mdl-button mdl-js-button mdl-button--accent" id="back_btn">
+                  Back
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="mdl-layout-spacer"></div>
+</div>
