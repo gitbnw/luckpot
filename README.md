@@ -1,5 +1,5 @@
 # luckpot
-Simple Rails interaction with UL API 
+Simple Rails interaction with UL API  
 https://github.com/NBKRailsStation/potluck-api
 
 
